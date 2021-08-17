@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.huey.learning.java.mybatis.plus.sample.mapper.UserMapper">
+
+    <select id="queryUsers" resultType="com.huey.learning.java.mybatis.plus.sample.entity.User">
+        select id, name, age, email from user
+        <where>
+            <if test="params.name != null and params.name != ''">
+                and name = #{params.name}
+            </if>
+            <if test="params.fromAge != null">
+                <![CDATA[ and age >= #{params.fromAge} ]]>
+            </if>
+            <if test="params.toAge != null">
+                <![CDATA[ and age <= #{params.toAge} ]]>
+            </if>
+        </where>
+    </select>
+
+</mapper>

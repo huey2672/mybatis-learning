@@ -4,13 +4,11 @@ import com.baomidou.mybatisplus.core.conditions.Wrapper;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.update.UpdateWrapper;
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
-import com.huey.learning.java.mybatis.plus.sample.crud.entity.User;
-import com.huey.learning.java.mybatis.plus.sample.crud.service.UserService;
+import com.huey.learning.java.mybatis.plus.sample.entity.User;
+import com.huey.learning.java.mybatis.plus.sample.service.UserService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-
-import java.util.List;
 
 /**
  * @author huey

@@ -1,6 +1,7 @@
 package com.huey.learning.java.mybatis.plus.sample.crud.service;
 
-import com.huey.learning.java.mybatis.plus.sample.crud.entity.User;
+import com.huey.learning.java.mybatis.plus.sample.entity.User;
+import com.huey.learning.java.mybatis.plus.sample.service.UserService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;

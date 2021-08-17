@@ -1,4 +1,4 @@
-package com.huey.learning.java.mybatis.plus.sample.crud.entity;
+package com.huey.learning.java.mybatis.plus.sample.entity;
 
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;

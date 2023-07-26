@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.huey.learning.java.mybatis.sample.StudentMapper">
+
+    <select id="batchSaveStudents" parameterType="Student">
+        INSERT INTO student (stud_id, stud_name, sex)
+        <foreach collection="students" item="item" open="VALUES" separator=",">
+            (#{item.studId}, #{item.studName}, #{item.sex})
+        </foreach>
+    </select>
+
+</mapper>
